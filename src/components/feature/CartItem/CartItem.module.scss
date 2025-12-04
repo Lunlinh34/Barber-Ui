@@ -1,0 +1,139 @@
+.cart-details {
+    width: 80%;
+}
+
+.cart-list {
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+
+    .image-cart {
+        width: 150px;
+        height: 150px;
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.cart-name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.quantity {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--grey);
+
+    span {
+        color: var(--red);
+    }
+}
+.cart-price {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--grey);
+    span {
+        color: var(--red);
+    }
+}
+
+.cart-info {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.remove-cart {
+    background: none;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.cart-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    .inc-cart {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        background: none;
+        border: 1px solid rgb(3 0 71 / 9%);
+        color: var(--red);
+    }
+
+    .des-cart {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        background: #f6f9fc;
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    margin: 30px 40px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-total {
+    width: 100%;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+
+    .content-total {
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: var(--red);
+            line-height: 16px;
+        }
+    }
+}
+
+.heading-result {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(3 0 71 / 9%);
+    padding-bottom: 10px;
+    color: var(--red);
+    font-weight: 600;
+}
+
+.order-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+
+    .btn-order {
+        width: 280px;
+    }
+}

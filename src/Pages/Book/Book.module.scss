@@ -1,0 +1,95 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+}
+
+.serviceItemsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.serviceItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+        border-color: #007bff;
+    }
+}
+
+.serviceItem.selected {
+    border-color: #007bff;
+    background-color: #e6f0ff;
+}
+
+.serviceItem img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.serviceName {
+    font-weight: bold;
+}
+
+.servicePrice {
+    color: #ff4d4f;
+}
+
+.bookingFormWrapper {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+}
+        .serviceItemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start; // giữ vị trí theo thứ tự
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; // cố định width
+  min-height: 250px; // cố định chiều cao
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; // giữ tỉ lệ ảnh
+    border-radius: 4px;
+  }
+
+  .serviceName {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .servicePrice {
+    margin-top: 4px;
+    color: #e60023;
+    font-weight: 600;
+  }
+}
+
+.noServiceMessage {
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+  color: #888;
+  font-size: 18px;
+}

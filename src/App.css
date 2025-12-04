@@ -1,0 +1,72 @@
+/* Font chữ toàn project */
+body, html, #root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font đẹp, hiện đại, dễ đọc */
+  font-size: 16px; /* cỡ chữ mặc định */
+  color: #222; /* màu chữ cơ bản */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chỉnh font chữ và cỡ chữ cho tất cả các nút */
+button {
+  font-family: inherit; /* kế thừa font body */
+  font-size: 15px; /* cỡ chữ cho nút */
+}
+
+/* Input text/file */
+input, select, textarea {
+  font-family: inherit;
+  font-size: 15px;
+}
+
+/* Modal HairAnalyzer */
+.modal-box h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.modal-box h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* AI Result */
+.hair-result.scrollable {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+/* Hair suggestion */
+.hair-card p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Floating HairAnalyzer button */
+.hair-analyzer-button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+/* Custom scrollbar */
+.hair-result.scrollable::-webkit-scrollbar,
+.hair-gallery::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hair-result.scrollable::-webkit-scrollbar-thumb,
+.hair-gallery::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+.hair-result.scrollable::-webkit-scrollbar-track,
+.hair-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}

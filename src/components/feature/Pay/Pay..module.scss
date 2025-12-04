@@ -1,0 +1,54 @@
+.wrapper {
+  width: 100%;
+  max-width: 320px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heading-info {
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #222;
+  }
+}
+
+.form-pay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .pay-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #f5f5f5;
+      border-color: var(--blue);
+    }
+
+    input[type='radio'] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--blue);
+      cursor: pointer;
+    }
+
+    .pay-name {
+      font-size: 1rem;
+      color: #333;
+      margin: 0;
+    }
+  }
+}

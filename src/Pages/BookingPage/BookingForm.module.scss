@@ -1,0 +1,240 @@
+.bookingPageWrapper {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+
+  .bookingPageContainer {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    max-width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  /* ================= SIDEBAR ================= */
+  .sidebar {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .sidebarCard {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+      }
+
+      .storeImage {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #222;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        margin: 3px 0;
+      }
+
+      .rating {
+        color: #f5a623;
+        font-size: 15px;
+      }
+    }
+
+    .serviceCardTitle {
+      font-weight: 600;
+      font-size: 16px;
+      color: #222;
+      padding: 6px 0;
+    }
+
+    .serviceCardsSidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .serviceCardSidebar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 12px;
+        border: 1px solid #e0e0e0;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: all 0.3s;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+          background: #f0f8ff;
+        }
+
+        .serviceImage {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 12px;
+        }
+
+        .serviceInfo {
+          display: flex;
+          flex-direction: column;
+          p:first-child {
+            font-weight: 600;
+            font-size: 14px;
+          }
+          p {
+            font-size: 13px;
+            color: #555;
+          }
+        }
+
+        &.selected {
+          border-color: #3399ff;
+          box-shadow: 0 6px 18px rgba(51,153,255,0.25);
+        }
+      }
+    }
+  }
+
+  /* ================= FORM ================= */
+  .bookingForm {
+    width: 65%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .formBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      label {
+        font-weight: 600;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .inputField {
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        transition: all 0.2s;
+
+        &:focus {
+          border-color: #3399ff;
+          box-shadow: 0 0 6px rgba(51,153,255,0.3);
+          outline: none;
+        }
+      }
+
+      .textareaField {
+        resize: none;
+        font-size: 14px;
+      }
+    }
+
+    .formActions {
+      display: flex;
+      justify-content: flex-end;
+
+      .submitButton {
+        background: #3399ff;
+        color: #fff;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.25s;
+
+        &:hover {
+          background: #2573cc;
+        }
+      }
+    }
+
+    .amenitiesWrapper {
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .amenitiesList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .amenityItem {
+          background: #e6f2ff;
+          padding: 6px 12px;
+          border-radius: 12px;
+          font-size: 13px;
+          color: #333;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+      }
+    }
+  }
+
+  .backButton {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}

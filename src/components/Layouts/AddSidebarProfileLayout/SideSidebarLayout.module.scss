@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  gap: 20px; // khoảng cách giữa sidebar và content
+  padding: 20px;
+  background-color: #f5f5f5;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+}
+
+.side-sidebar-profile {
+  flex: 0 0 280px; // chiều rộng cố định
+  height: calc(100vh - 40px); // full viewport trừ padding container
+  position: sticky;
+  top: 20px;
+  overflow-y: auto; // scroll nếu sidebar dài
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  overflow-y: auto; // scroll riêng content khi dài
+  max-height: calc(100vh - 40px);
+
+  @media (max-width: 1024px) {
+    max-height: none;
+    padding: 16px;
+  }
+}

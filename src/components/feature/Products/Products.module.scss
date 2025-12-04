@@ -1,0 +1,166 @@
+// .product-item {
+//     display: flex;
+//     flex-direction: column;
+//     border: 1px solid;
+//     border-radius: 12px;
+// }
+
+// .avatar {
+//     width: 300px;
+//     height: 200px;
+//     border-top-right-radius: 12px;
+//     border-top-left-radius: 12px;
+//     object-fit: cover;
+//     position: relative;
+
+//     &:hover .btn-product {
+//         display: flex;
+//         width: 150px;
+//         margin: auto;
+//         margin-top: 20%;
+//         border-top-right-radius: 12px;
+//         border-top-left-radius: 12px;
+//     }
+//     &:hover::after {
+//         border-top-right-radius: 12px;
+//         border-top-left-radius: 12px;
+//         opacity: 1;
+//         visibility: visible;
+//     }
+//     &::after {
+//         background-color: rgba(0, 0, 0, 0.5);
+//         content: '';
+//         inset: 0;
+//         opacity: 0;
+//         position: absolute;
+//         transition: all 0.3s ease 0s;
+//         visibility: hidden;
+//     }
+// }
+// .product-name {
+//     padding: 0 8px;
+// }
+
+// .link-name {
+//     padding: 12px 0 0 0;
+//     font-size: 1.6rem;
+// }
+
+// .students-count {
+//     display: flex;
+//     align-items: center;
+//     padding: 0 8px 30px 12px;
+// }
+
+// .quantity {
+//     margin-left: 2px;
+//     position: relative;
+//     top: -2px;
+// }
+
+// .btn-product {
+//     position: relative;
+//     z-index: 2;
+//     display: none;
+// }
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+
+        .overlay {
+            opacity: 1;
+        }
+
+        .btn-view,
+        .btn-cart {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* Ảnh sản phẩm */
+.card-image {
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.btn-view,
+.btn-cart {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.btn-cart {
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &:hover {
+        background: #0a804a;
+        color: #fff;
+    }
+}
+
+/* Nội dung card */
+.card-content {
+    padding: 18px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #242424;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e94560;
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -1,0 +1,176 @@
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2000;
+  overflow-y: auto; /* nếu modal cao hơn màn hình */
+}
+
+/* Modal box */
+.modal-box {
+  background: #fff;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 85vh; /* không quá 85% chiều cao màn hình */
+  padding: 25px 25px;
+  position: relative;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  overflow-y: auto; /* scroll nếu nội dung vượt modal */
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #f44336;
+}
+
+/* Title */
+.modal-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Section titles */
+.modal-box h3 {
+  font-size: 16px;
+  margin: 15px 0 10px 0;
+  text-align: left;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Input file */
+.modal-box input[type="file"] {
+  display: block;
+  margin: 12px auto 18px auto;
+  padding: 14px 22px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  text-align: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modal-box input[type="file"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Button phân tích */
+.modal-box button {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modal-box button:hover:not(:disabled) {
+  background: #1976d2;
+  transform: scale(1.05);
+}
+
+.modal-box button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Preview image */
+.hair-preview {
+  width: 160px;
+  border-radius: 10px;
+  margin: 12px auto;
+  display: block;
+}
+
+/* AI Result scrollable */
+.hair-result.scrollable {
+  text-align: left;
+  background: #f8f9fa;
+  padding: 14px;
+  border-radius: 8px;
+  max-height: 180px; /* scroll nếu quá cao */
+  overflow-y: auto;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Hair suggestions scrollable */
+.hair-gallery {
+  margin-top: 15px;
+  max-height: 180px; /* scroll nếu nhiều kiểu tóc */
+  overflow-y: auto;
+  padding-right: 5px; /* tránh tràn scrollbar */
+}
+
+.hair-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hair-card {
+  width: 95px;
+  text-align: center;
+}
+
+.hair-card img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.hair-card p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Nút tròn AI phía dưới cùng màn hình */
+.hair-analyzer-button {
+  position: fixed;
+   bottom: 90px;         /* cách mép dưới 30px */
+  right: 30px;                    /* cách mép phải */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 9999;
+}
+
+.hair-analyzer-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}

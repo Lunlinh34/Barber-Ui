@@ -1,0 +1,115 @@
+.wrapper {
+  padding: 2rem;
+  background-color: #f9fafc;
+  min-height: 100vh;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(70.06deg, #fa0000 -5%, #ff4e4e 106%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  .order-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .product-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fdfdfd;
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #e4e4e4;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #e0f7ff;
+      transform: scale(1.01);
+    }
+
+    .image {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+
+    .product-info p {
+      margin: 2px 0;
+      font-size: 14px;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.no-orders,
+.no-products {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .order-card {
+    padding: 16px;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

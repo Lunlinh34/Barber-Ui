@@ -1,0 +1,109 @@
+.wrapper {
+  width: 100%;
+  max-width: 360px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heading-info {
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #222;
+  }
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #555;
+  }
+
+  select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:focus {
+        border-color: var(--blue);
+      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    }
+  }
+
+  .add-btn {
+    margin-top: 8px;
+    padding: 8px 12px;
+      display: inline-flex;           // để icon và text nằm cùng hàng
+      gap: 6px;                       // khoảng cách giữa icon và text
+
+    border: none;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: #060606;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+     opacity: 0.9; // thay vì darken
+    }
+  }
+
+  .no-address {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #777;
+    font-size: 1rem;
+  }
+}
+
+.form-name {
+  display: flex;
+  gap: 8px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #555;
+  }
+
+  input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+
+    &:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    }
+  }
+}

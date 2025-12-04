@@ -1,0 +1,376 @@
+/* AdminBookingPage.module.scss */
+
+.admin-container {
+  padding: 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #2f3640;
+}
+
+/* === Dashboard Forms === */
+.dashboard-forms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.form-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #273c75;
+  }
+}
+
+.form-inline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+
+  input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #dcdde1;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+.customer-card {
+  background-color: #f1f2f6;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .field-group {
+    margin-bottom: 10px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    select {
+      width: 100%;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #dcdde1;
+      font-size: 14px;
+    }
+  }
+
+  button {
+    background-color: #273c75;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+    &:hover {
+      background-color: #40739e;
+    }
+  }
+}
+
+/* === Product Form === */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input, textarea, select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #dcdde1;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: #44bd32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+    &:hover {
+      background-color: #4cd137;
+    }
+  }
+}
+
+/* === Divider === */
+.divider {
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+  background-color: #dcdde1;
+}
+
+/* === Table Section === */
+.table-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #273c75;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 1px solid #f1f2f6;
+    }
+
+    th {
+      background-color: #f5f6fa;
+      font-weight: 600;
+      color: #2f3640;
+    }
+
+    tbody tr {
+      transition: background 0.2s;
+      &:hover {
+        background-color: #f1f2f6;
+      }
+    }
+
+    img {
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 5px;
+      &:first-of-type {
+        background-color: #273c75;
+        color: white;
+      }
+      &:last-of-type {
+        background-color: #e84118;
+        color: white;
+      }
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}
+
+/* === Dashboard Tables (Booking & Orders) === */
+.dashboard-tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  @media(max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  .table-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #273c75;
+    }
+  }
+}
+
+/* === Buttons chung === */
+.btn-primary {
+  background-color: #273c75;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  &:hover {
+    background-color: #40739e;
+  }
+}
+
+.btn-secondary {
+  background-color: #0097e6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  &:hover {
+    background-color: #00a8ff;
+  }
+}
+
+.btn-action {
+  background-color: #e1b12c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  &:hover {
+    background-color: #fbc531;
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #273c75;
+  border: 2px solid #273c75;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    background-color: #273c75;
+    color: white;
+  }
+}
+/* --- STYLING CHO MODALS (Minimalist & Data-Focused) --- */
+
+/* Đảm bảo nền Modal sạch sẽ và góc bo tròn */
+:global(.modal-content) {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Bóng đổ nhẹ */
+}
+
+/* Tiêu đề Modal (Clean Header) */
+:global(.modal-header) {
+    background-color: #f8f8f8; /* Nền xám nhạt */
+    border-bottom: 2px solid #e0e7ff; /* Đường kẻ phân tách mờ */
+    padding: 15px 25px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+:global(.modal-title) {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4f46e5; /* Màu nhấn */
+}
+
+/* Nội dung Modal (Body) */
+:global(.modal-body) {
+    padding: 25px;
+}
+
+/* Footer Modal (Buttons) */
+:global(.modal-footer) {
+    padding: 15px 25px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Định kiểu lại bảng trong Modal (Ví dụ: Modal QL Nhân viên) */
+.table-in-modal {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-in-modal thead th {
+    background-color: #eef2ff; /* Màu nhấn nhẹ cho tiêu đề bảng */
+    font-weight: 600;
+    color: #333;
+}
+
+.table-in-modal tbody tr {
+    transition: background-color 0.2s;
+}
+
+.table-in-modal tbody tr:hover {
+    background-color: #f5f7fa;
+}
+
+/* Nút trong Modal Footer */
+:global(.modal-footer) .btn-primary {
+    /* Sử dụng styling đã định nghĩa trước đó */
+    background-color: #4f46e5;
+    color: #fff;
+}
+
+:global(.modal-footer) .btn-secondary {
+    /* Nút đóng (Đóng) */
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+}/* --- Gợi ý cho .select-clean hoặc chung với input --- */
+.select-clean {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 8px; /* Góc bo tròn */
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    background-color: white; /* Nền trắng sạch */
+    appearance: none; /* Ẩn mũi tên dropdown mặc định của trình duyệt */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234f46e5%22%20d%3D%22M287%2C74.3%20L146.2%2C215.1%20L5.4%2C74.3%20L31.3%2C48.4%20L146.2%2C163.3%20L261.1%2C48.4%20z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px auto; /* Thêm icon mũi tên tùy chỉnh */
+}
+
+.select-clean:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}

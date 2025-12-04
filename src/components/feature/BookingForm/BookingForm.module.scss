@@ -1,0 +1,439 @@
+// .formGroup {
+//     display: flex;
+//     align-items: center;
+//     color: fuchsia;
+// }
+// .heForm {
+//     background: #fff;
+//     border-radius: 8px;
+//     padding: 30px 40px;
+//     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+//     margin: 0 auto;
+//     max-width: 900px;
+// }
+
+// .formTitle {
+//     text-align: center;
+//     font-weight: 600;
+//     font-size: 20px;
+//     margin-bottom: 24px;
+//     color: #1b3d4d;
+// }
+
+// .heGrid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+//     gap: 20px;
+// }
+
+// .heField {
+//     display: flex;
+//     flex-direction: column;
+//     label {
+//         margin-bottom: 6px;
+//         font-weight: 500;
+//         color: #444;
+//     }
+// }
+
+// .inputField {
+//     border: 1px solid #cfcfcf;
+//     border-radius: 6px;
+//     padding: 10px 14px;
+//     font-size: 15px;
+//     transition: border-color 0.2s, box-shadow 0.2s;
+
+//     &:focus {
+//         border-color: #1b3d4d;
+//         box-shadow: 0 0 0 3px rgba(27, 61, 77, 0.1);
+//         outline: none;
+//     }
+// }
+
+// .heFieldFull {
+//     grid-column: 1 / -1;
+// }
+
+// .readonly {
+//     background: #f7f7f7;
+//     padding: 10px 14px;
+//     border-radius: 6px;
+//     border: 1px solid #ddd;
+// }
+
+// .heActions {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-top: 25px;
+//     flex-wrap: wrap;
+//     gap: 12px;
+// }
+
+// .heBtn {
+//     background: #1b3d4d;
+//     color: #fff;
+//     padding: 12px 22px;
+//     font-size: 15px;
+//     border: none;
+//     border-radius: 6px;
+//     cursor: pointer;
+//     transition: background 0.2s;
+//     &:hover {
+//         background: #264d5f;
+//     }
+// }
+
+// .heMiniLink {
+//     font-size: 13px;
+//     color: #777;
+//     a {
+//         color: #1b3d4d;
+//         text-decoration: none;
+//         &:hover {
+//             text-decoration: underline;
+//         }
+//     }
+// }
+
+// label {
+//     flex: 0 0 100px;
+//     margin-right: 20px;
+// }
+
+// .h1 {
+//     align-items: center;
+//     margin-right: 130px;
+// }
+// .inputField {
+//     flex: 1;
+//     padding: 8px;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     width: 100%;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+
+// .bookingForm {
+//     width: 500px;
+//     margin: 0 auto;
+// }
+
+// .formGroup {
+//     margin-bottom: 7px;
+// }
+
+// .addServiceButton {
+//     margin-top: 10px;
+// }
+
+// .removeServiceButton {
+//     margin-left: 10px;
+//     padding: 5px 10px;
+//     background-color: var(--red);
+//     color: var(--white);
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+
+// .btn-submit {
+//     display: flex;
+//     width: 390px;
+//     margin: auto;
+//     position: relative;
+//     left: 63px;
+// }
+
+// .submitButton {
+//     width: 500px;
+//     padding: 10px;
+//     background-color: var(--red);
+//     color: var(--white);
+//     border: blue;
+//     border-radius: 20px;
+//     cursor: pointer;
+//     align-items: center;
+//     color: gold;
+//     font-size: 18px;
+// }
+
+// .textareaField {
+//     width: 500px;
+// }
+// .bookingFormWrapper {
+//   max-width: 600px;
+//   margin: 0 auto;
+//   padding: 20px;
+//   background: #fff;
+//   border-radius: 10px;
+//   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+//   .formTitle {
+//     font-size: 1.8rem;
+//     font-weight: bold;
+//     margin-bottom: 20px;
+//     text-align: center;
+//   }
+
+//   .bookingForm {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 15px; // Khoảng cách giữa các khối
+
+//     .formBlock {
+//       display: flex;
+//       flex-direction: column;
+
+//       label {
+//         font-weight: 600;
+//         margin-bottom: 5px;
+//       }
+
+//       .inputField {
+//         padding: 8px 12px;
+//         border-radius: 5px;
+//         border: 1px solid #ccc;
+//         font-size: 1rem;
+//       }
+
+//       .readonly {
+//         padding: 8px 12px;
+//         background: #f1f1f1;
+//         border-radius: 5px;
+//         font-size: 1rem;
+//       }
+//     }
+
+//     .formActions {
+//       display: flex;
+//       justify-content: center;
+
+//       .submitButton {
+//         background-color: #007bff;
+//         color: #fff;
+//         padding: 10px 25px;
+//         border: none;
+//         border-radius: 5px;
+//         font-size: 1rem;
+//         cursor: pointer;
+//         transition: 0.2s;
+
+//         &:hover {
+//           background-color: #0056b3;
+//         }
+//       }
+//     }
+//   }
+// }
+// .bookingFormWrapper {
+//   padding: 20px;
+// }
+
+// .formBlock {
+//   margin-bottom: 20px;
+//   opacity: 0;
+//   transform: translateY(20px);
+//   transition: opacity 0.5s ease, transform 0.5s ease;
+
+//   &.fadeIn {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// .formTitle {
+//   font-size: 24px;
+//   margin-bottom: 20px;
+// }
+
+// .inputField {
+//   width: 100%;
+//   padding: 8px;
+//   margin-top: 4px;
+// }
+
+// .submitButton {
+//   padding: 10px 20px;
+//   background-color: #007bff;
+//   color: white;
+//   border: none;
+//   cursor: pointer;
+//   border-radius: 4px;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// }
+
+///
+.bookingWrapper {
+  padding: 20px;
+
+  .cityHeader {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+
+    .citySelect {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      outline: none;
+
+      &:focus {
+        border-color: #ff5a5f;
+      }
+    }
+  }
+
+  .storeListWrapper {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .storeCard {
+      display: flex;
+      align-items: center;
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+
+        .bookButton {
+          opacity: 1;
+          right: 16px;
+        }
+      }
+
+      .storeImage {
+        width: 160px;
+        height: 120px;
+        object-fit: cover;
+      }
+
+      .storeInfo {
+        padding: 12px 16px;
+        flex-grow: 1;
+
+        h3 {
+          margin: 0 0 6px 0;
+          font-size: 18px;
+        }
+
+        .address {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 6px;
+        }
+
+        .rating {
+          font-size: 16px;
+          color: #FFD700;
+
+          .star {
+            margin-right: 2px;
+          }
+        }
+      }
+
+      .bookButton {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
+        padding: 8px 14px;
+        background-color: #ff5a5f;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease, right 0.3s ease;
+
+        &:hover {
+          background-color: #e14b50;
+        }
+      }
+    }
+  }
+
+  .bookingFormWrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+
+    .formTitle {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .formBlock {
+      margin-bottom: 16px;
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+      }
+
+      .inputField {
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+
+        &:focus {
+          border-color: #ff5a5f;
+        }
+      }
+
+      .textareaField {
+        resize: vertical;
+      }
+    }
+
+    .formActions {
+      text-align: right;
+
+      .submitButton {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: #ff5a5f;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e14b50;
+        }
+      }
+    }
+  }
+
+  .fadeIn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper-form {
+    height: 100%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        position: relative;
+        text-align: center;
+        top: 110px;
+        border-radius: 14px;
+        background-color: var(--white);
+    }
+}
+
+.btn-login {
+    margin-top: 18px;
+}
